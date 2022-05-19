@@ -507,9 +507,7 @@ div[class^="col"]{
 
 
   .branding.one{
-    @media (min-width:768px) and (max-width:1200px){
-      padding-left: 10px;
-    }
+    display:none;
     .wrap{
       text-align: center;
       background-color: $light;
@@ -555,14 +553,13 @@ div[class^="col"]{
           fill:$light-2;
         }
       }
-    } 
+    }
+    @media (min-width:992px) {
+      display: block;
+    }
   }
 
   .branding.two{ 
-    @media (min-width:768px) and (max-width:1200px){
-      padding-right: 10px;
-
-    }
     .wrap{
       background-color: $brand-dark;
       justify-content: space-around;
@@ -605,9 +602,6 @@ div[class^="col"]{
   }
 
   .branding.three{
-    @media (min-width:768px) and (max-width:1200px){
-      padding-left: 10px;
-    }
     .wrap{
       background-color: $light;
       &::before{
@@ -668,6 +662,8 @@ div[class^="col"]{
       }
     } 
   }
+
+
 }
 
 

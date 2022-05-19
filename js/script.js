@@ -12,6 +12,45 @@ if(!isTouch) {
 
 
 ScrollTrigger.matchMedia({
+  "(max-width: 1023px)": function() {
+    bcards()
+    function bcards(){
+      ///////////////business cards coming down///////////////////
+      const animationTrigger = document.querySelector('.card-down-trig');
+      const section = document.querySelectorAll('.card-down img');
+      gsap.set(section, {yPercent:'0', autoAlpha:1})
+
+      gsap.to(section, {
+        yPercent:0, stagger:0.3,autoAlpha:1,
+        scrollTrigger: {
+          trigger: animationTrigger,
+          start: 'top bottom-=100',
+          toggleActions: 'play none none none',
+        }  
+      })
+    }
+  },
+  
+  "(min-width: 1024px)": function() {
+    bcards()
+    function bcards(){
+      ///////////////business cards coming down///////////////////
+      const animationTrigger = document.querySelector('.card-down-trig');
+      const section = document.querySelectorAll('.card-down img');
+      gsap.set(section, {yPercent:'-300', autoAlpha:0})
+
+      gsap.to(section, {
+        yPercent:0, stagger:0.3,autoAlpha:1,
+        scrollTrigger: {
+          trigger: animationTrigger,
+          start: 'top bottom-=100',
+          toggleActions: 'play none none none',
+        }  
+      })
+    }
+  },
+
+
 "(max-width: 1367px)": function() {
   hero();
   function hero(){  
@@ -169,22 +208,7 @@ ScrollTrigger.matchMedia({
     }
 
     ////can't repeat section, this is because of stagger
-    bcards()
-    function bcards(){
-      ///////////////business cards coming down///////////////////
-      const animationTrigger = document.querySelector('.card-down-trig');
-      const section = document.querySelectorAll('.card-down img');
-      gsap.set(section, {yPercent:'-300', autoAlpha:0})
 
-      gsap.to(section, {
-        yPercent:0, stagger:0.3,autoAlpha:1,
-        scrollTrigger: {
-          trigger: animationTrigger,
-          start: 'top bottom-=100',
-          toggleActions: 'play none none none',
-        }  
-      })
-    }
 
     bannerOne()
     function bannerOne(){
