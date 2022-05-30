@@ -537,20 +537,21 @@ div[class^="col"] {
         padding: 8%;
         width: 100%; }
         .media-brand div.one .wrap div .title {
-          font-size: 42px;
+          font-size: 50px;
           line-height: 1.2em;
           font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-weight: 600;
           color: #fff; }
         .media-brand div.one .wrap div p {
           color: #fff;
-          margin: 10px 0; }
+          margin: 10px 0;
+          font-weight: bold; }
         .media-brand div.one .wrap div p:last-of-type {
           color: #dc5c00;
           margin-bottom: 40px; }
         .media-brand div.one .wrap div img {
-          border-top-left-radius: 100px;
-          border-bottom-right-radius: 100px;
+          border-top-left-radius: 25%;
+          border-bottom-right-radius: 25%;
           z-index: 2;
           position: relative; }
         .media-brand div.one .wrap div .shapes {

@@ -690,7 +690,7 @@ div[class^="col"]{
           padding:$md;
           width: 100%;
           .title{
-            font-size: 42px;
+            font-size: 50px;
             line-height: 1.2em;
             font-family: $header-font;
             font-weight: 600;
@@ -699,14 +699,15 @@ div[class^="col"]{
           p{
             color:$white;
             margin: 10px 0;
+            font-weight: bold;
           }
           p:last-of-type{
             color:$brand-contrast;
             margin-bottom: 40px;
           }
           img{
-            border-top-left-radius: 100px;
-            border-bottom-right-radius: 100px;
+            border-top-left-radius: 25%;
+            border-bottom-right-radius: 25%;
             z-index: 2;
             position: relative;
           }
