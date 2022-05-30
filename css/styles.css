@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #2d2929; }
 
 h1 {
-  font-size: 26px; }
+  font-size: 25px; }
 
 h2 {
   font-size: 24px; }
@@ -311,14 +311,8 @@ div[class^="col"] {
     @media (min-width: 1200px) {
       .intro .preamble {
         margin: 10px 0; } }
-  .intro .logo {
-    width: 60%;
-    max-width: 250px;
-    margin-bottom: 20px; }
-    @media (min-width: 1200px) {
-      .intro .logo {
-        width: 80%;
-        max-width: unset; } }
+  .intro h1, .intro p {
+    text-align: center; }
   .intro .btn {
     margin-top: 10px; }
   .intro .btn,
